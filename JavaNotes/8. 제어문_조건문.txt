@@ -1,0 +1,57 @@
+1. 제어문
+    1) 프로그램의 진행 흐름을 필요에 따라 변경하고 싶을 대 사용함
+
+    if
+    if else
+    if, else if, else
+
+    static : static 전용 메모리 공간에 있음, 공유하기 위한 선언
+
+2.
+    4) 문법 
+        switch(조건식){
+            case 1:
+                처리 1;
+                break;
+            case 2:
+                처리 2;
+                break;
+                .
+                .
+                .
+            default:
+                처리 n;
+        }
+
+    5) java 14부터 좀 더 간결해진 표현식 지원됨
+        - 간단하게 쉼표(,)로 조건 부분
+        - 식으로 표현하여 반환 값을 받을 수 있음
+            - yield 키워드 사용
+            
+            ex)
+
+            int day = switch(month) {
+                case 1, 3, 5, 7, 8, 10, 12 -> {
+                    System.out.println("한달은 31일 입니다.");
+                    yield 31;
+                }
+                case 4, 6, 9, 11 -> {
+                    System.out.println("한달은 30일 입니다.");
+                    yield 30;
+                }
+                case 2 -> {
+                    System.out.println("한달은 28일 입니다.");
+                    yield 28;
+                }
+                default -> {
+                    System.out.println("존재하지 않는 달입니다.");
+                    yield 0;
+                }
+            };
+
+
+
+
+
+
+

@@ -1,0 +1,71 @@
+1. Math.random()
+    1) 0.0 <=  Math.random()  < 1.0
+    2) double 형
+    3) 특정 범위에 난수가 출력되게 할 수 있음
+    4) 1~10사이 정수 얻기
+        10 곱하기
+        0.0 <= Math.random() < 10.0
+        더하기 1
+        1.0 <= Math.random() < 11.0
+        int 형 변환
+        1 <= Math.random() <  11
+        1 <= Math.random() <= 10
+
+    1) 함수
+    2) 클래스 안에 존재하는 함수
+    3) 수학에서의 함수
+        숫자 1, 숫자2
+            ||
+            \/
+            _______________
+            |               |
+            |   더하기 함수  |
+            |_______________|
+                        ||
+                        \/
+                        숫자의 합
+        num1, num2
+            ||
+            \/
+            _______________
+            |               |
+            |   addNum()    |
+            |_______________|
+                        ||
+                        \/
+                        result
+        
+    4) int addNum(int num1, int num2){
+          int result = num1 + num2;
+          return result;
+       }
+
+    5) main() 메서드 : 프로그램 시작점(entryPoint)
+    
+        public static void main(String[] args){
+            System.out.println("이순신");
+            addNum(1,2);
+        }
+
+    6) 메서드 종료하기
+        - return : 어떤 값을 반환하는데 사용하는 예약어
+
+2. 메서드 정의하기
+    1)   
+         
+         ┎>반환형             ┌>매개변수(파라미터)
+        ___        _________________
+        int addNum(int num, int num2){
+            ──────
+              └> 메서드 이름
+        }
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,20 @@
+1. 콘솔 출력
+    1) System.out.println()
+       System.out.print()
+       System.out.printf()
+
+    2) System.out.printf("포맷 문자열", 데이터, ...)
+    
+       System.out.printf("정수 : %d, 실수 : %f, 글자 : %c, 글자들 : %s")
+       
+2. 콘솔 입력
+   1) Scanner
+      - import java.util.Scanner;               //클래스 불러오기
+
+        Scanner scan = new Scanner(System.in);  // 객체 선언
+        
+        String name1 = scan.nextLine();         //줄단위 입력 처리
+        String name2 = scan.next();             //공백 단위 처리
+        
+        scan.close();                           //객체 종료
+
