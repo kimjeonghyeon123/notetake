@@ -46,7 +46,7 @@
     1) request        javax.servlet.http.HttpServletRequest  
     2) response       javax.servlet.http.HttpServletResponse    
     3) session        javax.servlet.http.HttpSession   
-    4) application    javax.servlet.ServletContext 
+    4) application    javax.servlet.ServletContext
     5) out            javax.servlet.jsp.JspWriter
     6) pageContext    javax.servlet.jsp.PageContext 
 
@@ -94,17 +94,21 @@
           각각의 id를 저장해서 클라이언트를 구별  
         - 로그인하면 session이 생겼다가 로그아웃하면 제거됨  
         - id, 장바구니 같이 각 사용자의 개별 정보를 담음 
-        - 사용자마다 1개씩 갖기 때문에 최소한의 데이터만 저장해야함 
-        - 서버 부담이 제일 큼                  
+        - 사용자마다 1개씩 갖기 때문에 최소한의 데이터만 저장해야함
+        - 서버 부담이 제일 큼
 
+    6) application
+        - 접근 범위 : WebApp(ServletContext) 전체에서 접근 가능
+        - 공통 저장소로 단 1개만 존재함
+        - 어느 곳에서도 읽기/쓰기 가능
 
 8. DTO(데이터 전송 객체)
-    1) 데이터를 저장하거나 전송하는데 쓰이는 객체 
-    2) 로직 없이 순수하게 데이터만 담고 있음 
-    3) VO(Value Object)    
-    4) DTO는 자바빈즈 규약에 따라 작성함 
-        - 기본(default) 패키지 이외의 패키지에 속해야 함 
-        - 멤버 변수(속성)의 접근 지정자는 private으로 선언해야 함 
+    1) 데이터를 저장하거나 전송하는데 쓰이는 객체
+    2) 로직 없이 순수하게 데이터만 담고 있음
+    3) VO(Value Object)
+    4) DTO는 자바빈즈 규약에 따라 작성함
+        - 기본(default) 패키지 이외의 패키지에 속해야 함
+        - 멤버 변수(속성)의 접근 지정자는 private으로 선언해야 함
         - 기본 생성자가 있어야 함
         - 멤버 변수에 접근할 수 있는 게터/세터메서드가 반드시 있어야 함
-        - 게터/세터 메서드의 접근 지정자는 public으로 선언해야 함 
+        - 게터/세터 메서드의 접근 지정자는 public으로 선언해야 함
