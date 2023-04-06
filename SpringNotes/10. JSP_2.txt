@@ -42,18 +42,31 @@
 
 3. EL (Expression Language)
     1) 표현 언어
+    
     2) 변수의 값을 표현식( <%= %> )보다 편하게 출력할 수 있게 해줌
             => ${속성}
+    
     3) JSP의 기본 문법 보완하는 역할
+    
     4) 4가지 영역(scope) 제공함
         - pageScope
         - requestScope
         - sessionScope
         - applicationScope
+    
     5) EL의 객체 표현 방식
         - .(점)이나 [](대괄호)를 사용
         - ex) ${param.id}
               ${paramValues.sns[0]}
+    
     6) 예외와 형변환에 관대함
         - null인 변수를 사용하면 예외가 발생하지 않음
+   
     7) 산술연산, 비교연산, 논리연산 가능
+    
+    8) form 값을 처리하기 위한 내장 객체
+        - param
+            - request.getParameter("매개변수명") 과 동일하게 요청 매개변수의 값을 받아옴
+        - paramValues
+            - request.getParameterValues("매개변수명") 과 동일하게 요청 매개변수의 값을 문자열 배열로 받아옴 
+            - 다중 선택이 가능한 checkbox를 통해 전달된 form 값을 받을 때 사용
