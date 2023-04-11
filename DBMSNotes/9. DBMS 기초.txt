@@ -61,8 +61,4 @@
         - BIGINT
             - 정수형
         - SERIAL
-
-        
-    1) DDL(Data Define Language)
-    2) DML(Data Manipulation Language)
-    3) DCL(Data Control Language)
+            - 

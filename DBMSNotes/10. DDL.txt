@@ -30,4 +30,37 @@
     5) FOREIGN KEY () REFERENCES 테이블명(컬럼명)
         - 부모 테이블의 PK를 외래키로 가짐
 
-        
+3.
+    1) 
+    2) 
+    3) ALTER TABLE 테이블명 RENAME COLUMN 현재컬럼명 TO 새로운컬럼명;
+    4) ALTER TABLE 테이블명 ALTER COLUMN 컬럼명 TYPE 데이터타입
+        - ALTER TABLE 테이블명 DROP UNIQUE 제약명
+    5) 외래키 제약조건 추가 / 삭제
+        - ALTER TABLE 테이블명 ADD FOREIGN KEY(컬럼명) REFERENCES 원테이블(원컬럼명)
+        - ALTER TABLE 테이블명 DROP FOREIGN KEY(컬럼명)
+    6) 테이블명
+        - ALTER TABLE 테이블명 RENAME NEW_테이블명
+    7) CHECK 제약조건 추가 / 삭제
+        - ALTER TABLE 테이블명 ADD CHECK 조건
+        - ALTER TABLE 테이블명 DROP CHECK 조건명
+    8) DEFAULT 제약조건 추가 / 삭제
+        - ALTER TABLE 테이블명 ALTER 컬럼명 SET DEFAULT 기본값
+        - ALTER TABLE 테이블명 ALTER 컬럼명 DROP DEFAULT 
+
+10. NOT NULL 제약조건
+    1) 
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
