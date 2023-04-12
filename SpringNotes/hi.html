@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Verification</title>
+    <style>
+        /* 스타일 설정 */
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        input[type="text"] {
+            width: 100px;
+            padding: 5px;
+            border: 1px solid #ccc;
+        }
+        button {
+            padding: 5px 10px;
+            background-color: #428bca;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        .error {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Email Verification</h1>
+    <form id="verification-form" onsubmit="verifyCode(); return false;">
+        <label for="code">Enter the verification code:</label>
+        <input type="text" id="code" name="code" required maxlength="6">
+        <button type="submit" id="verify-button">Verify</button>
+        <p id="error-message" class="error"></p>
+    </form>
+
+    <script src="script.js">
+        // 인증번호 확인 함수
+function verifyCode() {
+    // 인증번호 입력 필드와 버튼을 가져옴
+    const codeInput = document.querySelector('#code');
+    const verifyButton = document.querySelector('#verify-button');
+
+    // 인증번호가 저장되어 있는지 확인
+    const email = localStorage.getItem('email');
+    const expectedCode = localStorage.getItem('code');
+    if (!email || !expectedCode) {
+        const errorMessage = document.querySelector('#error-message');
+        errorMessage.textContent = 'Verification code not found.';
+        return;
+    }
+
+    // 입력된 인증번호와 예상 인증번호 비교
+    const enteredCode = codeInput.value;
+    if (enteredCode !== expectedCode) {
+        const errorMessage = document.querySelector('#error-message');
+        errorMessage.textContent = 'Verification code is invalid.';
+        return;
+    }
+
+    // 인증 성공 시 로컬 스토리지에서 인증 정보 제거 및 메시지 출력
+    localStorage.removeItem('email');
+    localStorage.removeItem('code');
+    const successMessage = document.querySelector('#error-message');
+    successMessage.textContent = 'Email address has been verified.';
+    successMessage.style.color = 'green';
+
+    // 인증된 이메일 주소를 서버로 전송하는 코드를 추가할 수 있음
+}
+    </script>
+</body>
+</html>
