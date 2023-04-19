@@ -47,3 +47,5 @@
         - 이후 DispatcherServlet을 초기화 및 등록하면서 servlet-context를 사용하고 XmlWebApplicationContext를 생성
             - 부모 AC
         - 총 2개의 XmlWebApplicationContext 객체가 생성, 연결
+
+3. 
