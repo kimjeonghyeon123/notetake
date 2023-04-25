@@ -20,8 +20,9 @@
     3) @Service 
 
     4) @Repository          
-
-
+        - 해당 클래스가 Repository 역할을 한다는 것을 나타냄
+        - 저장소와 관련한 역할
+        - 
 
 3. API 개발 관련 어노테이션 
     0) @RestController
@@ -97,6 +98,4 @@
       - singleton : 컨테이너에 단일로 생성 (default)
       - prototype : 작업시마다 Bean을 새로 생성하고 싶은 경우 
       - request : http요청마다 새롭게 Bean을 생성하고 싶은 경우                    
-
-
 
