@@ -1,0 +1,37 @@
+@startuml
+participant User
+participant "Web Client" as C
+participant "OTTT Server" as S
+
+User -> C: GET /
+activate C
+    C -> S: static asset 요청(HTML/CSS 등)
+    
+        activate S
+            S -> C: HTML/CSS 등 응답
+        deactivate S
+    
+    C -> C: 입력 페이지로 redirection
+    C --> User: 이름 입력 페이지
+
+    User -> C: 1. 이름 입력
+    C -> C: 화면에 이름 저장
+    C -> C: 추가 페이지로 redirection
+
+    C --> User: 추가 페이지
+    User -> C: 2. 내용 입력
+    C -> C: 화면에 내용 저장
+    C -> C: 관리 페이지로  redirection
+    C --> User: 관리 페이지
+
+    loop
+        User -> C: 3. 관리 내용 추가 입력
+        C -> C: 정보 저장
+
+        C -> C: 결과 미리보기
+        C --> User: 결과 노출
+    end
+
+deactivate C
+
+@enduml

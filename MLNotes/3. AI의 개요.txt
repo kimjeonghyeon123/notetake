@@ -1,0 +1,105 @@
+1. Aritificial Intelligence 정의 
+    1) 인간의 지적능력 
+        - 학습능력  => ML (Machine Learning)
+        - 인지능력  => 이미지, 음성 
+        - 언어능력  => 자연어 대화 
+       을 컴퓨터 시스템으로 구현해 내는 과학 분야 
+    2) 인간과 유사한 지능적인 기능을 갖추고 있는 컴퓨터 시스템
+
+2. 인공지능의 역사 
+    1) 1956년 
+        - 학회에서 존 매카시가 인공지능(AI) 용어 처음 사용 
+    2) 1957년
+        - 프랭크 로젠블렛이 '퍼셉트론(Perceptron)'이라는 
+          최초의 신경망 모델 발표       
+    3) 1969년
+        - 마빈 민스키, 시모어 페퍼트가 'Perceptrons' 책 발행
+            - 단일 계층 신경망의 한계 지적 (1차 AI Winter) 
+    4) 1980년 
+        - 신경망에 대한 연구 재개됨 
+        - 침체기 (2차 AI Winter)                               
+    5) 1986년
+        - 제프리 힌턴 교수가 XOR문제의 해결책 제시
+            - 역전파 알고리즘 
+    6) 2006년
+        - 제프리 힌턴 교수 딥러닝 논문 발표    
+    7) 2012년
+        - 제프리 힌턴 교수팀 ILSVRC 대회(이미지넷 이미지 인식 대회)에서
+          압도적 성적으로 우승
+            - CNN 기반 알렉스넷  
+    8) 2016년 
+        - 알파고 대결 이후 인공지능에 대한 인식이 
+          사회 저변에 급속히 확대                           
+
+3. AI 종류
+    1) 강한 인공지능
+    2) 약한 인공지능 
+
+    3) 기술적 특이점 (Technological Sigularity)
+        - AI 발전 가속되어 모든 인류의 생물학적인 지능을 
+          합친 것보다 더 뛰어난 기술적 초인공지능이 
+          출현하는 시점 
+        - 2040년대 경에 AI가 특이점에 도달 할 것           
+            - 특이점 이후 인류는 AI에 의해 멸종하거나
+              AI 나노 로봇 도움 받아 영생을 누릴것임 
+
+4. 인공지능 영역
+    1) 포함관계
+        AI 
+            Machine Learning              
+                    Deep Learning
+                        Generative AI
+
+    2) 머신 러닝과 딥러닝 기술 
+
+        머신러닝 (ML)                      딥러닝(DL)
+      --------------------------------------------------------                          
+        정형 데이터 중심                비정형 데이터 중심
+        (고객, 상품, 거래 DB)           (Image, Audio, Text)
+
+        예측모델링에 적용               인지컴퓨터에 적용    
+        (수요예측, 이상탐지모델)        (시각/음성/언어지능)
+
+        데이터마이닝/기계학습           딥러닝 알고리즘    
+        알고리즘 
+
+5. 인공지능의 핵심
+    1) 인공신경망 (Aritificial Neural NetWork) 알고리즘 
+        - 사람의 두뇌와 비슷한 방식으로 
+          정보를 처리하기 위해 뉴런과 시냅스의 원리 모방한
+          컴퓨터 알고리즘 
+
+    2)                 Synatic              Summing    
+                       Weights              Junction     
+                       (신경망 가중치)       (합계 연산)    
+                    X1  =>  WX1                 
+        Input       X2  =>  WX2  
+        Signal      ... =>  ...     =========>   Σ       ==========>  Activation  ===> Output      
+        (입력변수)   Xn  =>  WXn                                       Function        (출력값)
+                                             Bias(편향,절편)          (활성화 함수)  
+                                               b   
+    3) 활성화 함수 (Activation Function)
+        - Step Function
+        - Sign Function
+        - Identity Function
+        - Sigmoid Function
+
+    4) 심층신경망 
+        - 인공신경망의 Hidden Layer를 여러 계층과 
+          여러 노드로 연결하여 심층신경망을 구성    
+        - 다층 퍼셉트론   
+          (MLP, Multi-Layered Perceptrons) 
+        - 여러 개의 뉴런을 여러 계층으로 구성한
+          다층 구조의 신경망 
+        - 딥러닝의 출발점  
+
+           Input Layer          Hidden Layer            Output Layer
+            M neurons              N neurons              K neurons  
+
+    5) 딥러닝 알고리즘 
+        - 좁은 의미 
+            - 인공신경망의 다중 구조가 심화(Deep)된 알고리즘 
+        - 넓은 의미 
+            - 여러 단계의 정보 표현과 추상화를 학습하는
+              최신 머신러닝 알고리즘의 총칭    
+        - deep network architecture with multiple layers                           

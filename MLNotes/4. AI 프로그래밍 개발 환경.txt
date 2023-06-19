@@ -1,0 +1,25 @@
+1. 개발 환경 구축 
+    1) Python 3.9.13
+    2) Google Colab 
+        - Python과 Jupyter NoteBook 환경을 
+          클라우드 가상공간에서 사용할수 있게 해주는 도구 
+            - Google ID, Google Drive에 소스 보관 
+    3) Numpy, Pandas, Scipy, Matplotlib              
+    4) TensorFlow 2.12.0
+    5) Keras
+        - 파이썬으로 작성된 오픈소스 신경망 라이브러리 
+        - 신경망을 구성하기 쉬움
+        - 딥 신경망과의 빠른 실험을 가능케 하도록 설계 
+        - TensorFlow 2.x 버전부터 내부에 Keras 포함하고 있음.
+
+2. 인공지능 데이터셋 
+  1) https://archive.ics.uci.edu/ 
+    - 머신러닝 알고리즘의 연구 개발을 위해 공개 
+  2) https://scikit-learn.org/stable/ 
+    - 파이썬 패키지에 내장된 데이터셋 
+  3) https://aihub.or.kr/ 
+  4) https://www.data.go.kr/ 
+  5) https://data.seoul.go.kr/ 
+          
+
+                           

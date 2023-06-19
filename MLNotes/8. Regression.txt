@@ -1,0 +1,70 @@
+1. 회귀(Regression)의 정의
+    1) 주어진 데이터(X)와 찾고자 하는 값(y) 사이의 관계를 찾는 방법 
+    2) 주어진 input data와 관심 있는 target value 사이의 
+       관계를 모델링하는 것을 말함 
+       - input data는 일반적으로 벡터이며(feature vector)
+       - target value는 일반적으로 실수값임(real value)
+
+       - feature vector로 target value를 예측하는 것을 
+         목표로 함
+    3) feature vector로 target value를 찾기 위해서는 
+       관계식이 필요함
+       - 이 관계식을 모델링 하는 것이 회귀 분석의 목표임.
+    
+    4) 머신러닝 모델이 관계식을 찾게 되면,
+       해당 관계식에 test data를 inference한 결과가 
+       예측값(y^)이 됨.       
+       - inference한 결과값 자체가 예측값이 됨 
+
+    5) Supervised Learning이기 때문에, 
+       주어진 target value를 찾는 방향으로 학습이 진행됨       
+
+2. Regression Model
+    1) Linear Regression
+
+3. Linear Regression
+    1) y = Wx + b로 표시되는 선형식으로 
+       x와 y 사이의 관계를 찾는 모델 
+    2) Linear regression은  하나의 선형식으로
+       X와 y 사이의 관계를 찾아내는 방법임 
+    3) 선형식의 계산 결과 자체가 예측 값임
+
+    4) y = Wx + b
+        => y = W1*X1 + W2*X2 + .... + Wn*Xn + b   
+
+    5) 예측 값이 실제 값과 가까워지려면 파라미터(w, b)을
+       업데이트 해야 함 
+        - 이때 Gradient Descent algorithm이 사용되어 
+          w, b를 업데이트 해줌. 
+        - 업데이트가 되는 방향은 주어진 Loss Function의
+          최소가 되는 지점으로 향하는 방향임.   
+        - Linear Regression이 할수 있는 best case는 
+          항상 찾을수 있음      
+
+    6) 회귀에서 가장 많이 사용하는 Loss Function
+        - MSE(Mean Squared Error) 
+
+        - 모델의 예측값(y^)이 실제값(y)에 점점 가까워지게
+          학습이 됨.
+          - 전체적으로 Loss의 평균이 작아지는 방향으로
+            학습이 진행됨.
+
+        - MSE를 사용하면 차이가 큰 데이터가 있는 경우 
+          Loss가 더 크게 나오기 때문에, outlier 같은
+          데이터가 있다면 미리 제거를 해주거나 
+          아니면 보정을 해주는 것이 필요함 
+
+        - Linear regression도 역시 파라미터 W와 b를 
+          찾는 문제가 되며, 적절한 파라미터를 찾았을 때
+          데이터를 잘 파악하는 선형식을 찾을수 있게 됨.  
+
+    7) Linear Regression 큰 장점
+        - 통계적으로 설명 가능한 이론이 많음 (설명 도구가 많음)
+        - interpretability(해석가능성) : 설명 가능함 
+            - 수식 자체가 선형적이기 때문에,
+              직접 계산을 해서 예측값이 왜 나오는지 설명이 가능함 
+        - Linear Model 자체가 가지는 simplicity가 있어서
+          모델 자체가 general함.
+          - 오히려 복잡한 모델보다 예측력이 더 뛰어남.  
+
+                          

@@ -1,0 +1,19 @@
+@startuml
+participant 운영자
+
+운영자 -> 어드민: 주문 조회
+    activate 어드민
+
+        어드민 -> DB: 주문 테이블 조회
+
+            activate DB
+
+                DB --> 어드민: 테이블 조회 결과
+
+            deactivate DB
+
+        어드민 -> 운영자: 주문 목록
+
+    deactivate 운영자
+
+@enduml

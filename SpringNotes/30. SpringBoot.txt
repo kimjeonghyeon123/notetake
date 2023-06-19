@@ -1,0 +1,18 @@
+1. 스프링 부트 소개
+    1) spring-boot-starter 
+        - 
+        - 
+    2) 
+
+3. 스프링 부트 시작되는 곳
+    1) @SpringBootApplication
+        - 스프링 부트 탐색지점
+        - 자동구성 활성화
+    
+    2) main(String[] args)
+        - 메인 클래스 진입지점
+
+    3) SpringApplication.run(ThymeleafApplication.class, args)
+        - 스프링 부트 애플리케이션 구동지점
+
+4. 스프링 
